@@ -137,9 +137,9 @@ section h2 {
 }
 
 #works .work-item img {
-  width: 100%;        /* Makes the image fill the container width */
-  height: 200px;      /* Fixed height for uniformity */
-  object-fit: cover;  /* Ensures the image maintains its aspect ratio while filling the box */
+  width: 100%;
+  height: 200px; /* Fixed height for uniform images */
+  object-fit: cover; /* Ensures images maintain their aspect ratio while filling space */
   border-radius: 8px;
   margin-bottom: 15px;
 }
@@ -150,6 +150,7 @@ section h2 {
   margin-top: 10px;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -166,13 +167,14 @@ footer {
 
 .social-links a {
   margin: 0 15px;
-  color: white;
+  color: #2a9d8f; /* Updated default color for visibility */
   font-size: 1.5rem;
   text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 .social-links a:hover {
-  color: #f4a261;
+  color: #e76f51; /* Distinct hover color for better interactivity */
 }
 
 /* Mobile Styles */
@@ -224,21 +226,13 @@ footer {
 
   /* Footer */
   footer {
-    text-align: center;
     padding: 20px;
-    background: #f7fbfe;
-    color: #333;
-    font-size: 0.9rem;
-    margin-top: 30px;
+    font-size: 0.8rem;
   }
 
-  /* Social Links */
-  .social-links {
-    text-align: center;
-  }
-
+  /* Social Media Icons */
   .social-links a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0 10px;
   }
 }
@@ -261,11 +255,6 @@ footer {
 
   section h2 {
     font-size: 1.3rem;
-  }
-
-  .social-links a {
-    font-size: 1.2rem;
-    margin: 0 10px;
   }
 
   /* Works Grid for Small Screens */
