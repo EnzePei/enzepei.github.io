@@ -3,76 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enzo's Website</title>
+  <title>Personal Website</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  
+  <!-- Add Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="profile">
-      <img src="photo.png" alt="Your Photo">
+      <img src="images/photo.png" alt="Your Photo">
     </div>
     <h1 id="title">Hi, I'm <span>Enzo Pei</span></h1>
-    <p id="tagline">Web Developer | Creative Thinker | High School Athelete</p>
+    <p id="tagline">Web Developer | Creative Thinker | High School Athlete</p>
   </header>
 
   <nav>
     <a href="#about">About Me</a>
     <a href="#experience">Experience</a>
+    <a href="#works">My Works</a>
     <a href="#hobbies">Hobbies</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I'm a passionate developer and high school student in Northview High School, Johns Creek, GA, US. </p> <p>I enjoy solving problems, creating cool projects, and exploring new technologies.</p>
+    <div class="about-content">
+      <img src="images/about_me.jpeg" alt="About Me Image" class="section-img">
+      <p>I'm a passionate developer and high school student at Northview High School, Johns Creek, GA, US. I enjoy solving problems, creating cool projects, and exploring new technologies.</p>
+    </div>
   </section>
 
   <section id="experience">
     <h2>Experience</h2>
-    <ul>
-      <li><strong>Northview High School AI Club Official</li>
-      <li><strong>Blue Bridge National Programming Competition National Third Prize</li>
-      <li><strong>Blue Bridge National Programming Competition Beijing Region First Prize</li>
-      <li><strong>University of Chinese Academy of Sciences National Student Artificial Intelligence Camp</li>
-    </ul>
+    <div class="experience-content">
+      <img src="images/experience.png" alt="Experience Image" class="section-img">
+      <ul>
+        <li><strong>Northview High School AI Club Official</strong></li>
+        <li><strong>Blue Bridge National Programming Competition - National Third Prize</strong></li>
+        <li><strong>Blue Bridge National Programming Competition - Beijing Region First Prize</strong></li>
+        <li><strong>University of Chinese Academy of Sciences - National Student Artificial Intelligence Camp</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="works">
+    <h2>My Works</h2>
+    <div class="works-grid">
+      <!-- Project 1 -->
+      <div class="work-item">
+        <a href="https://courageous-croquembouche-1b02f8.netlify.app/">
+            <img src="images/heart.png" alt="Project 1" class="section-img">
+          </a>
+        <h3>Project One</h3>
+        <p>A short description of the project. Talk about the technology used and the problem it solves.</p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="work-item">
+        <a href="https://chromewebstore.google.com/detail/what-to-eat-extensions/ipfhnmaiojadgiefmnigcmcjinhgbhdd?hl=en-US&utm_source=ext_sidebar">
+            <img src="images/what_to_eat.png" alt="Project 2" class="section-img">
+          </a>
+        <h3>Project Two</h3>
+        <p>A short description of the project. Talk about the technology used and the problem it solves.</p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="work-item">
+        <a href="https://link-to-your-project3.com">
+            <img src="images/project3.jpg" alt="Project 3" class="section-img">
+          </a>
+        <h3>Project Three</h3>
+        <p>A short description of the project. Talk about the technology used and the problem it solves.</p>
+      </div>
+    </div>
   </section>
 
   <section id="hobbies">
     <h2>Hobbies</h2>
-    <p>I love Gaming, Reading, and Playing Basketball. When I’m not coding, you’ll find me running or playing ball.</p>
-    <p>
-        <li>Varsity Crosscountry</li>
+    <div class="hobbies-content">
+      <img src="images/IMG_3986.jpg" alt="Hobbies Image" class="section-img">
+      <p>I love Gaming, Reading, and Playing Basketball. When I’m not coding, you’ll find me running or playing ball.</p>
+      <ul>
+        <li>Varsity Cross Country</li>
         <li>Varsity Track and Field
-            <ul>
-                <li>800m</li>
-                <li>1600m</li>
-            </ul>
+          <ul>
+            <li>800m</li>
+            <li>1600m</li>
+          </ul>
         </li>
-        <li>
-            Swim
-        </li>
-        <li>
-            Basketball
-        </li>
-        <li>
-            Favorite Game: Witcher 3 and Call of Duty Modern Warfare
-        </li>
-        <li>
-            Favorite Artist: Alan Walker, Chainsmoker and Avicii
-        </li>
-    </p>
-
+        <li>Swim</li>
+        <li>Basketball</li>
+        <li>Favorite Game: Witcher 3 and Call of Duty Modern Warfare</li>
+        <li>Favorite Artist: Alan Walker, Chainsmokers, and Avicii</li>
+      </ul>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Feel free to reach out via email at <a href="enze3.1415926@gmail.com">enze3.1415926@gmail.com</a> or find me on <a href="https://www.instagram.com/enzo_p3.14/">Instagram</a>.</p>
+    <p>Feel free to reach out via email at <a href="mailto:enze3.1415926@gmail.com">enze3.1415926@gmail.com</a> or find me on <a href="https://www.instagram.com/enzo_p3.14/">Instagram</a>.</p>
   </section>
 
   <footer>
-    <p>© 2024 Your Name. All Rights Reserved.</p>
+    <p>© 2024 Enzo Pei. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/enzo_p3.14/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/your-channel-link" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="mailto:enze3.1415926@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/EnzePei" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
