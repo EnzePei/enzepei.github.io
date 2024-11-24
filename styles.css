@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(to bottom, #f0f9ff, #e6f7f5, #ffffff); /* Gradient background */
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(217, 235, 172, 0.9); /* Slight transparency for header */
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  margin-bottom: 15px;
+}
+
+header h1 span {
+  color: #2a9d8f;
+}
+
+nav {
+  text-align: center;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #2a9d8f;
+}
+
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px 25px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-child(even) {
+  background: #f7fbfe;
+}
+
+section h2 {
+  color: #2a9d8f;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f7fbfe;
+  color: #333;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  header {
+    padding: 30px;
+  }
+
+  header .profile img {
+    width: 90px;
+    height: 90px;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
+
+  section {
+    margin: 20px auto;
+    padding: 15px;
+  }
+}
