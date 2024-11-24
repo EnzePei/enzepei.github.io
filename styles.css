@@ -4,15 +4,14 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background: linear-gradient(to bottom, #f0f9ff, #e6f7f5, #ffffff); /* Gradient background */
+  background: linear-gradient(to bottom, #f0f9ff, #e6f7f5, #ffffff); /* Soft gradient */
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 header {
   text-align: center;
   padding: 50px 20px;
-  background: rgba(217, 235, 172, 0.9); /* Slight transparency for header */
+  background: rgba(255, 255, 255, 0.9);
   color: #333;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -21,7 +20,7 @@ header .profile img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 3px solid #ffffff;
+  border: 3px solid #f0f0f0;
   margin-bottom: 15px;
 }
 
@@ -44,6 +43,7 @@ nav a {
   text-decoration: none;
   color: #333;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 nav a:hover {
@@ -65,6 +65,89 @@ section:nth-child(even) {
 
 section h2 {
   color: #2a9d8f;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Layout for Text and Image Sections with Unique Layouts */
+.content-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.text-section {
+  flex: 1;
+  padding: 15px;
+}
+
+.image-section {
+  flex: 1;
+  text-align: center;
+}
+
+.section-img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Unique Layouts for Each Section */
+.about-layout {
+  flex-direction: row;
+}
+
+.experience-layout {
+  flex-direction: row-reverse;
+}
+
+.hobbies-layout {
+  flex-direction: column;
+  align-items: center;
+}
+
+.works-layout {
+  display: block;
+  text-align: center;
+}
+
+.contact-layout {
+  flex-direction: row-reverse;
+}
+
+/* Works Section Grid */
+#works .works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+#works .work-item {
+  background: #ffffff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+#works .work-item img {
+  width: 100%;        /* Makes the image fill the container width */
+  height: 200px;      /* Fixed height for uniformity */
+  object-fit: cover;  /* Ensures the image maintains its aspect ratio while filling the box */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+#works .work-item h3 {
+  color: #2a9d8f;
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
 footer {
@@ -76,23 +159,117 @@ footer {
   margin-top: 30px;
 }
 
+/* Social Media Icons */
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  margin: 0 15px;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #f4a261;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
+  /* Header */
   header {
-    padding: 30px;
+    padding: 40px 20px;
   }
 
-  header .profile img {
-    width: 90px;
-    height: 90px;
+  header h1 {
+    font-size: 1.5rem;
   }
 
+  header p {
+    font-size: 1rem;
+  }
+
+  /* Navigation */
   nav a {
+    font-size: 0.9rem;
     margin: 0 10px;
   }
 
+  /* Sections */
   section {
-    margin: 20px auto;
     padding: 15px;
+    margin: 20px auto;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Content Section */
+  .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Image and Text Sections */
+  .section-img {
+    max-width: 100%;
+  }
+
+  /* Works Grid */
+  #works .works-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #f7fbfe;
+    color: #333;
+    font-size: 0.9rem;
+    margin-top: 30px;
+  }
+
+  /* Social Links */
+  .social-links {
+    text-align: center;
+  }
+
+  .social-links a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+  }
+}
+
+/* Very Small Screens (Mobile Portrait) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+    margin: 0 8px;
+  }
+
+  section {
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  .social-links a {
+    font-size: 1.2rem;
+    margin: 0 10px;
+  }
+
+  /* Works Grid for Small Screens */
+  #works .works-grid {
+    grid-template-columns: 1fr;
   }
 }
