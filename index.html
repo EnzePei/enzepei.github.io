@@ -3,126 +3,242 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Website</title>
+  <title>Enzo Pei | Developer & Student Athlete</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Add Font Awesome for icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="profile">
-      <img src="images/photo.png" alt="Your Photo">
-    </div>
-    <h1 id="title">Hi, I'm <span>Enzo Pei</span></h1>
-    <p id="tagline">Web Developer | Creative Thinker | High School Athlete</p>
-  </header>
-
   <nav>
-    <a href="#about">About Me</a>
+    <a class="logo" href="#top">Enzo Pei</a>
+    <a href="#about">About</a>
     <a href="#experience">Experience</a>
-    <a href="#works">My Works</a>
+    <a href="#works">Works</a>
     <a href="#hobbies">Hobbies</a>
     <a href="#contact">Contact</a>
   </nav>
 
+  <header id="top" class="hero">
+    <canvas class="dot-field" aria-hidden="true"></canvas>
+    <div class="hero-copy">
+      <p class="eyebrow">Developer · AI Explorer · Student Athlete</p>
+      <h1 id="title">Hi, I'm <span>Enzo Pei</span>.</h1>
+      <p id="tagline">I build playful web projects, experiment with AI, and bring a runner's discipline to creative problem solving.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#works">See My Work</a>
+        <a class="button secondary" href="mailto:enze3.1415926@gmail.com">Contact Me</a>
+      </div>
+    </div>
+    <div class="profile">
+      <img src="images/photo.webp" alt="Portrait of Enzo Pei">
+    </div>
+  </header>
+
   <section id="about">
-    <h2>About Me</h2>
+    <div class="section-heading">
+      <p class="eyebrow">About</p>
+      <h2>Curious by default, persistent by habit.</h2>
+    </div>
     <div class="about-content">
-      <img src="images/about_me.jpeg" alt="About Me Image" class="section-img">
-      <p>I'm a passionate developer and high school student at Northview High School, Johns Creek, GA, US. I enjoy solving problems, creating cool projects, and exploring new technologies.</p>
+      <div class="stack-container" data-photo-stack aria-label="About me photo stack">
+        <div class="card-rotate">
+          <div class="photo-stack-card">
+            <img src="images/about_me.webp" alt="Enzo outdoors" class="card-image">
+          </div>
+        </div>
+        <div class="card-rotate">
+          <div class="photo-stack-card">
+            <img src="images/me_beach.webp" alt="Enzo at the beach" class="card-image">
+          </div>
+        </div>
+        <div class="card-rotate">
+          <div class="photo-stack-card">
+            <img src="images/me_college.webp" alt="Enzo visiting a college campus" class="card-image">
+          </div>
+        </div>
+        <div class="card-rotate">
+          <div class="photo-stack-card">
+            <img src="images/me_hike.webp" alt="Enzo hiking" class="card-image">
+          </div>
+        </div>
+        <div class="card-rotate">
+          <div class="photo-stack-card">
+            <img src="images/me_disney.webp" alt="Enzo at Disney" class="card-image">
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>I'm a passionate developer and high school student at Northview High School in Johns Creek, Georgia. I enjoy solving problems, creating cool projects, and exploring new technologies.</p>
+        <p>My favorite work sits between creativity and usefulness: tiny tools, interactive experiments, and ideas that make everyday decisions more fun.</p>
+      </div>
     </div>
   </section>
 
   <section id="experience">
-    <h2>Experience</h2>
+    <div class="section-heading">
+      <p class="eyebrow">Experience</p>
+      <h2>Competitions, clubs, and AI learning.</h2>
+    </div>
     <div class="experience-content">
-      <img src="images/experience.png" alt="Experience Image" class="section-img">
-      <ul>
-        <li><strong>Northview High School AI Club Official</strong></li>
-        <li><strong>Blue Bridge National Programming Competition - National Third Prize</strong></li>
-        <li><strong>Blue Bridge National Programming Competition - Beijing Region First Prize</strong></li>
-        <li><strong>University of Chinese Academy of Sciences - National Student Artificial Intelligence Camp</strong></li>
-      </ul>
+      <div class="experience-copy">
+        <p>I’m building experience through AI club leadership, programming competitions, project work, and athletics. This list is designed to feel interactive without losing the clean black-and-white style.</p>
+      </div>
+      <div class="scroll-list-container" data-animated-list tabindex="0" aria-label="Experience highlights">
+        <div class="scroll-list">
+          <div class="animated-item" data-index="0">
+            <div class="item selected">
+              <p class="item-text"><strong>Northview High School AI Club Official</strong><span>Helping build interest around practical AI projects and student-led exploration.</span></p>
+            </div>
+          </div>
+          <div class="animated-item" data-index="1">
+            <div class="item">
+              <p class="item-text"><strong>Blue Bridge National Programming Competition</strong><span>National Third Prize.</span></p>
+            </div>
+          </div>
+          <div class="animated-item" data-index="2">
+            <div class="item">
+              <p class="item-text"><strong>Blue Bridge Programming Competition</strong><span>Beijing Region First Prize.</span></p>
+            </div>
+          </div>
+          <div class="animated-item" data-index="3">
+            <div class="item">
+              <p class="item-text"><strong>National Student Artificial Intelligence Camp</strong><span>University of Chinese Academy of Sciences.</span></p>
+            </div>
+          </div>
+          <div class="animated-item" data-index="4">
+            <div class="item">
+              <p class="item-text"><strong>Dynamic Particle Hearts</strong><span>Designed and shipped an interactive creative coding project.</span></p>
+            </div>
+          </div>
+          <div class="animated-item" data-index="5">
+            <div class="item">
+              <p class="item-text"><strong>What to Eat Chrome Extension</strong><span>Built a small browser tool that turns a food list into a quick decision.</span></p>
+            </div>
+          </div>
+          <div class="animated-item" data-index="6">
+            <div class="item">
+              <p class="item-text"><strong>Varsity Cross Country</strong><span>Training consistency, endurance, and race-day focus.</span></p>
+            </div>
+          </div>
+          <div class="animated-item" data-index="7">
+            <div class="item">
+              <p class="item-text"><strong>Varsity Track & Field</strong><span>800m and 1600m events.</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="top-gradient" aria-hidden="true"></div>
+        <div class="bottom-gradient" aria-hidden="true"></div>
+      </div>
     </div>
   </section>
 
   <section id="works">
-    <h2>My Works</h2>
-    <div class="works-grid">
-      <!-- Project 1 -->
-      <div class="work-item">
-        <a href="https://createyourheart.netlify.app/">
-            <img src="images/heart.png" alt="Project 1" class="section-img">
-          </a>
-        <h3>Dynamic Particle Hearts</h3>
-        <p>A Dynamic Particle Hearts Generator, in this website you can generate your own symbole of love, customize its size, velocity and density of particles. Send it to the people you love!</p>
+    <div class="section-heading">
+      <p class="eyebrow">Works</p>
+      <h2>Things I've built and shipped.</h2>
+    </div>
+    <div class="works-showcase">
+      <div class="works-intro">
+        <p>Here are a few projects I’ve built while exploring creative coding, browser tools, and practical web ideas.</p>
+        <p>The stack rotates automatically. Hover over it to pause and click a card link to open the project.</p>
       </div>
 
-      <!-- Project 2 -->
-      <div class="work-item">
-        <a href="https://chromewebstore.google.com/detail/what-to-eat-extensions/ipfhnmaiojadgiefmnigcmcjinhgbhdd?hl=en-US&utm_source=ext_sidebar">
-            <img src="images/what_to_eat.png" alt="Project 2" class="section-img">
+      <div class="card-swap-container" data-card-swap aria-label="Featured projects">
+        <div class="work-item">
+          <a href="https://createyourheart.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <img src="images/heart.webp" alt="Dynamic Particle Hearts project preview" class="section-img">
           </a>
-        <h3>What to Eat Google Extension</h3>
-        <p>This google extension can help you decide what you want to eat. Enter your food choices in to your desire list, click Make Your Decision, and get your meal choice!</p>
-      </div>
+          <h3>Dynamic Particle Hearts</h3>
+          <p>A particle heart generator where users can customize size, speed, and density, then send a small animated message to someone they love.</p>
+          <a class="text-link" href="https://createyourheart.netlify.app/" target="_blank" rel="noopener noreferrer">Visit project</a>
+        </div>
 
-      <!-- Project 3 -->
-      <div class="work-item">
-        <a href="https://link-to-your-project3.com">
-            <img src="images/project_three.jpg" alt="Project 3" class="section-img">
+        <div class="work-item">
+          <a href="https://chromewebstore.google.com/detail/what-to-eat-extensions/ipfhnmaiojadgiefmnigcmcjinhgbhdd?hl=en-US&utm_source=ext_sidebar" target="_blank" rel="noopener noreferrer">
+            <img src="images/what_to_eat.webp" alt="What to Eat extension preview" class="section-img">
           </a>
-        <h3>Project Three</h3>
-        <p>Working on it right now.</p>
+          <h3>What to Eat Google Extension</h3>
+          <p>A Chrome extension that helps people decide what to eat by turning a custom food list into a quick meal choice.</p>
+          <a class="text-link" href="https://chromewebstore.google.com/detail/what-to-eat-extensions/ipfhnmaiojadgiefmnigcmcjinhgbhdd?hl=en-US&utm_source=ext_sidebar" target="_blank" rel="noopener noreferrer">View extension</a>
+        </div>
+
+        <div class="work-item">
+          <a href="https://link-to-your-project3.com" target="_blank" rel="noopener noreferrer">
+          <img src="images/project_three.webp" alt="Project Three preview" class="section-img">
+          </a>
+          <h3>Project Three</h3>
+          <p>Working on it right now.</p>
+          <a class="text-link" href="#contact">Ask me about it</a>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="hobbies">
-    <h2>Hobbies</h2>
-    <div class="hobbies-content">
-      <img src="images/IMG_3986.jpg" alt="Hobbies Image" class="section-img">
-      <p>I love Gaming, Reading, and Playing Basketball. When I’m not coding, you’ll find me running or playing ball.</p>
-      <ul>
-        <li>Varsity Cross Country</li>
-        <li>Varsity Track and Field
-          <ul>
-            <li>800m</li>
-            <li>1600m</li>
-          </ul>
-        </li>
-        <li>Swim</li>
-        <li>Basketball</li>
-        <li>Favorite Game: Witcher 3 and Call of Duty Modern Warfare</li>
-        <li>Favorite Artist: Alan Walker, Chainsmokers, and Avicii</li>
-      </ul>
+    <div class="section-heading">
+      <p class="eyebrow">Hobbies</p>
+      <h2>Outside the editor.</h2>
+    </div>
+    <div class="split hobbies-content">
+      <img src="images/IMG_3986.webp" alt="Hobbies Image" class="section-img">
+      <div>
+        <p>I love gaming, reading, and basketball. When I’m not coding, you’ll probably find me running or playing ball.</p>
+        <div class="tag-list">
+          <span>Varsity Cross Country</span>
+          <span>Varsity Track & Field</span>
+          <span>800m</span>
+          <span>1600m</span>
+          <span>Swim</span>
+          <span>Basketball</span>
+          <span>The Witcher 3</span>
+          <span>Alan Walker</span>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out via email at <a href="mailto:enze3.1415926@gmail.com">enze3.1415926@gmail.com</a> or find me on <a href="https://www.instagram.com/enzo_p3.14/">Instagram</a>.</p>
+    <div class="contact-card">
+      <p class="eyebrow">Contact</p>
+      <h2>Have an idea, question, or project?</h2>
+      <p>Feel free to reach out via email at <a href="mailto:enze3.1415926@gmail.com">enze3.1415926@gmail.com</a> or find me on <a href="https://www.instagram.com/enzo_p3.14/">Instagram</a>.</p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2024 Enzo Pei. All Rights Reserved.</p>
-    <div class="social-links">
-      <a href="https://www.instagram.com/enzo_p3.14/" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.youtube.com/channel/your-channel-link" target="_blank">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a href="mailto:enze3.1415926@gmail.com">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="https://github.com/EnzePei" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
+    <p>© 2026 Enzo Pei. All Rights Reserved.</p>
+    <div class="logoloop logoloop--horizontal logoloop--fade logoloop--scale-hover" data-logo-loop aria-label="Social links">
+      <div class="logoloop__track">
+        <ul class="logoloop__list">
+          <li class="logoloop__item">
+            <a class="logoloop__link" href="https://www.instagram.com/enzo_p3.14/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <span class="logoloop__node"><i class="fab fa-instagram"></i><span>Instagram</span></span>
+            </a>
+          </li>
+          <li class="logoloop__item">
+            <a class="logoloop__link" href="https://github.com/EnzePei" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <span class="logoloop__node"><i class="fab fa-github"></i><span>GitHub</span></span>
+            </a>
+          </li>
+          <li class="logoloop__item">
+            <a class="logoloop__link" href="https://www.linkedin.com/in/enzo-pei/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <span class="logoloop__node"><i class="fab fa-linkedin"></i><span>LinkedIn</span></span>
+            </a>
+          </li>
+          <li class="logoloop__item">
+            <a class="logoloop__link" href="mailto:enze3.1415926@gmail.com" aria-label="Email">
+              <span class="logoloop__node"><i class="fas fa-envelope"></i><span>Email</span></span>
+            </a>
+          </li>
+          <li class="logoloop__item">
+            <a class="logoloop__link" href="https://www.youtube.com/channel/your-channel-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <span class="logoloop__node"><i class="fab fa-youtube"></i><span>YouTube</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
