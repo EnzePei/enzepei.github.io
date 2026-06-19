@@ -95,12 +95,14 @@ footer {
 
 .hero {
   position: relative;
+  width: 100%;
+  margin-inline: 0;
   min-height: 78vh;
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
   align-items: center;
   gap: 64px;
-  padding: 86px 0 66px;
+  padding: 86px max(20px, calc((100% - 1120px) / 2)) 66px;
   overflow: hidden;
   isolation: isolate;
 }
@@ -139,8 +141,8 @@ p {
 
 h1 {
   margin-bottom: 16px;
-  font-size: clamp(3rem, 8vw, 5.9rem);
-  line-height: 0.96;
+  font-size: clamp(2.35rem, 5.6vw, 4.4rem);
+  line-height: 1.02;
   letter-spacing: 0;
 }
 
@@ -772,10 +774,14 @@ footer p {
 }
 
 @media (max-width: 520px) {
-  .hero,
   section,
   footer {
     width: min(100% - 28px, 1120px);
+  }
+
+  .hero {
+    width: 100%;
+    padding-inline: 14px;
   }
 
   nav {
@@ -789,7 +795,7 @@ footer p {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.45rem;
   }
 
   .stack-container {
